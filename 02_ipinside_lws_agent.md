@@ -53,7 +53,7 @@ TouchEn nxKey와 유사하게 IPinside LWS Agent 애플리케이션도 로컬 �
 한편, 이 애플리케이션이 실행되고 있다면 웹사이트는 `wdata`, `ndata`와 `udata` 필드를 통해서 다양한 데이터를 받아 볼 수 있다. 사실 꽤 많은 데이터가 전송된다:
 
 
-![127.0.0.1:21300/?t=A&value= 주소로 접속한 브라우저 창의 화면 캡쳐. 응답은 jQuery 콜백으로 wdata, ndata 와 udata 필드를 포함한 여러 데이터와 base64 인코딩된 값들이다.](https://palant.info/temp/aW6mA9rC3oG5cF5d/request.png)
+![127.0.0.1:21300/?t=A&value= 주소로 접속한 브라우저 창의 화면 캡쳐. 응답은 jQuery 콜백으로 wdata, ndata 와 udata 필드를 포함한 여러 데이터와 base64 인코딩된 값들이다.](https://palant.info/2023/01/25/ipinside-koreas-mandatory-spyware/request.png)
 
 
 이 데이터는 당신의 IP를 포함하고 있을 것이다. 하지만 크기로 봤을 때, 그것만이 포함된 것이 아님은 분명하다.
@@ -68,7 +68,7 @@ TouchEn nxKey와 유사하게 IPinside LWS Agent 애플리케이션도 로컬 �
 복호화하면 꽤 많은 양의 바이너리 데이터를 얻을 수 있다:
 
 
-![약간의 바이너리 데이터를 포함한 16진수 데이터 덤프. 다음 문자열이 눈에 띈다: QEMU Harddisk,  Gigabit Network Connection](https://palant.info/temp/aW6mA9rC3oG5cF5d/wdata.png)
+![약간의 바이너리 데이터를 포함한 16진수 데이터 덤프. 다음 문자열이 눈에 띈다: QEMU Harddisk,  Gigabit Network Connection](https://palant.info/2023/01/25/ipinside-koreas-mandatory-spyware/wdata.png)
 
 
 결과물에서 보듯이, 가상 머신 내에서 IPinside를 실행중이다. 
@@ -119,7 +119,7 @@ IPinside agent는 부분 문자열로도 매칭을 한다.
 성능을 약간 향상시키기 위해 여러 개의 추측을 하나의 요청으로 묶었고 이것을 바탕으로 40-50초마다 프로세스 이름을 찾아내는 개념 증명 (proof of concept) 페이지를 만들었다:
 
 
-![웹 페이지 스크린샷: "잠시만 기다려주세요, 프로세스 목록을 가져오고 있습니다… 접미사 테스트 중 oerver-svg.exe cortana.exe.” 이미 찾은 다음 프로세스들도 보여준다: i3gproc.exe asdsvc.exe wpmsvc.exe i3gmainsvc.exe](https://palant.info/temp/aW6mA9rC3oG5cF5d/processes.png)
+![웹 페이지 스크린샷: "잠시만 기다려주세요, 프로세스 목록을 가져오고 있습니다… 접미사 테스트 중 oerver-svg.exe cortana.exe.” 이미 찾은 다음 프로세스들도 보여준다: i3gproc.exe asdsvc.exe wpmsvc.exe i3gmainsvc.exe](https://palant.info/2023/01/25/ipinside-koreas-mandatory-spyware/processes.png)
 
 
 
@@ -337,7 +337,7 @@ handle_request(request);
 그들의 자기소개에 따르면, 인터리젠은 빅 데이터 전문 기업이다.
 수많은 은행, 보험사, 정부 기관에 [데이터 수집 및 분석](http://interezen.co.kr/izh6/2_product/iTracer.html) 서비스를 제공하고 있다.
 
-![다음 제목의 웹사이트 섹션 스크린샷: “Client Companies. With the number one products in this industry, INTEREZEN is providing the best services for more than 200 client companies.” 그 아래는 우리은행, 산업은행, KEB 하나은행, 국세청, MG손해보험, 현대카드 로고 외에 "더보기" 버튼](https://palant.info/temp/aW6mA9rC3oG5cF5d/clients.png)
+![다음 제목의 웹사이트 섹션 스크린샷: “Client Companies. With the number one products in this industry, INTEREZEN is providing the best services for more than 200 client companies.” 그 아래는 우리은행, 산업은행, KEB 하나은행, 국세청, MG손해보험, 현대카드 로고 외에 "더보기" 버튼](https://palant.info/2023/01/25/ipinside-koreas-mandatory-spyware/clients.png)
 
 > 역주: 위에서 링크된 인터리젠 홈페이지의 [한국어 버전 페이지](http://interezen.co.kr/izh6/index.html)에서는 고객사 수를 “120여개”로 소개하고 있습니다.
 
@@ -348,12 +348,12 @@ handle_request(request);
 > 역주: 2023년 2월 초 현재 위에 있는 매뉴얼 링크에 접속을 시도하면 HTTP 404 Not Found가 뜹니다.
 > 아마도 매뉴얼 파일이 삭제된 것으로 보입니다.
 
-![특정 날짜 범위의 목록을 요청하는 웹 인터페이스 스크린샷. 테이블의 행 중 일부는 date, webip, proxyip, natip, attackip 등이다.](https://palant.info/temp/aW6mA9rC3oG5cF5d/ipinside_backend1.png)  
+![특정 날짜 범위의 목록을 요청하는 웹 인터페이스 스크린샷. 테이블의 행 중 일부는 date, webip, proxyip, natip, attackip 등이다.](https://palant.info/2023/01/25/ipinside-koreas-mandatory-spyware/ipinside_backend1.png)  
 IPinside 3.0 제품 설명서 화면 캡쳐
 
 이 애플리케이션은 2009년 시점에서 각 사용자의 상세 정보뿐만 아니라 IP 주소, 위치, 브라우저 및 운영체제 등의 정보를 바탕으로 한 통계 요약을 보여주는 것이 이미 가능했다.
 
-![다음 운영체제에 대한 사용자 정보 통계를 보여주는 웹 인터페이스의 스크린샷: Windows 98, Windows 2000, Windows 2003, Windows XP](https://palant.info/temp/aW6mA9rC3oG5cF5d/ipinside_backend2.png)  
+![다음 운영체제에 대한 사용자 정보 통계를 보여주는 웹 인터페이스의 스크린샷: Windows 98, Windows 2000, Windows 2003, Windows XP](https://palant.info/2023/01/25/ipinside-koreas-mandatory-spyware/ipinside_backend2.png)  
 IPinside 3.0 제품 설명서 화면 캡쳐
 
 여기서 목표는 사용자를 보호하는 것이 아니라, 은행을 비롯한 인터리젠의 고객사를 보호하는 것이다.
