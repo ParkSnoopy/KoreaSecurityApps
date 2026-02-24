@@ -186,7 +186,7 @@ send_command("getAxInfo", {
 </pluginInstallInfo>
 ```
 
-여기서 TouchEn nxKey을 필수 애플리케이션으로 표시한다.
+여기서 TouchEn nxKey를 필수 애플리케이션으로 표시한다.
 베라포트는 `objectMIMEType` 항목을 통해서 애플리케이션이 이미 설치되었는지 인식한다.
 설치가 안되었을 경우 `downloadURL` 와 `backupURL` 항목을 사용해 설치파일을 다운로드한다.
 
